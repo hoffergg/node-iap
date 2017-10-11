@@ -176,7 +176,7 @@ buffer, the call will automatically parse it into an object for use.
 The response passed back to your callback will also be Google Play specific. The entire parsed response will be in the
 receipt sub-object.
 
-productPurchase:
+Managed in-app products:
 
 ```json
 {
@@ -186,12 +186,35 @@ productPurchase:
             "purchaseState": 0,
             "consumptionState": 1,
             "developerPayload": "",
-            "orderId": "GPA.3342-7424-7096-57495"
+            "orderId": "GPA.3342-7424-7096-59495"
         },
-        "transactionId": "mjnmgjibihnpnhigennbmgkh.AO-J1OxBPs7I9UsM0TcEhIFuhY0e4exLhJpUiN9uSI66VA9yQM2shMjXhTTcH6ln5ZW-B9xC9VRYXkDX6cqODdca85iXm5EvKcz_N3CnNZO56akWD14ViF-klVfOTdfpWQMd7oAxOYgM",
+        "transactionId": "mjnmgjibihnpnhigennbmgkb.AO-J1OxBPs7I9UsM0TcEhIFuhY0e4exLhJpUiN9uSI66VA9yQM2shMjXhTTcH6ln5ZW-B9xC9VRYXkDX6cqODdca85iXm5EvKcz_N3CnNZO56akWD14ViF-klVfOTdfpWQMd7oAxOYgM",
         "productId": "manage.coins.pack1",
         "platform": "google"
 }
+```
+Subscription:
+
+```json
+{
+        "receipt": {
+            "kind": "androidpublisher#subscriptionPurchase",
+            "startTimeMillis": "1507204294882",
+            "expiryTimeMillis": "1507809078388",
+            "autoRenewing": false,
+            "priceCurrencyCode": "USD",
+            "priceAmountMicros": "9990000",
+            "countryCode": "US",
+            "developerPayload": "bGoa+V7g/yqDXvKRcq+JTFn4uQZbPiBJo4pf9FzJ",
+            "paymentState": 2,
+            "cancelReason": 0,
+            "userCancellationTimeMillis": "1507290365185",
+            "orderId": "GPA.3328-8192-1521-50747"
+        },
+        "transactionId": "ihmbjdaiabjdcajhdasbcbgk.AO-J1OwwC62TYmjgGrjMTVBuYKFdcGpLAmM8QzP3Jrl-QHxn9F5ghSrCCqRXksJxIIhTIGMSrc6iXli5CYE9u73vxkrYjm3DAOf3klSOBbDmrkK52ktef1XKUJJbhpBZJ5ILHzIW67Ru",
+        "productId": "sub.monthly",
+        "platform": "google"
+    }
 ```
 
 ### Roku
