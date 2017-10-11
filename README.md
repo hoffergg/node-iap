@@ -176,17 +176,20 @@ buffer, the call will automatically parse it into an object for use.
 The response passed back to your callback will also be Google Play specific. The entire parsed response will be in the
 receipt sub-object.
 
+productPurchase:
+
 ```json
 {
-        "receipt": {
-                "kind": "androidpublisher#productPurchase",
-                "purchaseTimeMillis": "1410835105408",
-                "purchaseState": 0,
-                "consumptionState": 1,
-                "developerPayload": ""
+"receipt": {
+            "kind": "androidpublisher#productPurchase",
+            "purchaseTimeMillis": "1507205582584",
+            "purchaseState": 0,
+            "consumptionState": 1,
+            "developerPayload": "",
+            "orderId": "GPA.3342-7424-7096-57495"
         },
-        "transactionId": "ghbbkjheodjokkipdmlkjajn.AO-J1OwfrtpJd2fkzzZqv7i107yPmaUD9Vauf9g5evoqbIVzdOGYyJTSEMhSTGFkCOzGtWccxe17dtbS1c16M2OryJZPJ3z-eYhEJYiSLHxEZLnUJ8yfBmI",
-        "productId": "abc",
+        "transactionId": "mjnmgjibihnpnhigennbmgkh.AO-J1OxBPs7I9UsM0TcEhIFuhY0e4exLhJpUiN9uSI66VA9yQM2shMjXhTTcH6ln5ZW-B9xC9VRYXkDX6cqODdca85iXm5EvKcz_N3CnNZO56akWD14ViF-klVfOTdfpWQMd7oAxOYgM",
+        "productId": "manage.coins.pack1",
         "platform": "google"
 }
 ```
